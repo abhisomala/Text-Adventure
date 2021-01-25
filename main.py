@@ -15,10 +15,10 @@ if age >= 13:
         print("You are starting with", health, "health")
         print("Let's play!")
 
-        left_or_right = input("First choice... Left or Right (left/right)? ")
+        left_or_right = input("On your left you see a muddy path and on your right you see a hill. Do you want to go right or left? (left/right)? ")
 
         if left_or_right == "left":
-            ans = input("Nice, you follow the path and reach a lake... Do you swim across or go around (across/around)? ")
+            ans = input("Nice, you follow the path and reach a lake... Do you want to swim across or go around (across/around)? ")
 
             if ans == "around":
                 print("You went around and reached the other side of the lake.")
@@ -27,7 +27,7 @@ if age >= 13:
                 print("You managed to get across, but were bit by a fish and lost 5 health.")
                 health -= 5
 
-            ans = input("You notice a house and a river. Which do you go to (river/house)? ")
+            ans = input("You notice a house that might have some food and a river that you want to go to for some odd reason. Where do you go? (river/house)? ")
             if ans == "house":
                 print("You go to the house and are greeted by the owner... He doesn't like you and you lose 5 health")
                 health -= 5
@@ -38,7 +38,7 @@ if age >= 13:
                     print("Congrats you have succesfully survived... You win!")
 
             else:
-                print("You fell in the river and lost...")
+                print("Turns out the river has sharks. You died")
 
 
         else:
