@@ -38,12 +38,20 @@ elif ans == "across":
 ans = input("You notice a house that might have some food and a river that you want to go to for some odd reason. Where do you go? (river/house)? ")
 
 if ans == "house":
-  print("You go to the house and are greeted by the owner... He doesn't like you and you lose 5 health")
-  health -= 5
+  print("You go to the house and are greeted by the owner")
+  
   
 else:
-  print("Turns out the river has sharks. You died")
+  print("Turns out the river has sharks. You lost 5 health")
+  health -= 5
+ans = input("There is a forest on your right and on your left there is a cave. Which one do you enter. (forest/cave) ")
 
+if ans == "forest":
+  print("You are now in the forest and see berries. They may recover your health but they may also be poisonous ")
+  health -= 5
+
+else:
+  print("You enter the cave and presented with 2 pathways.")
 if health <= 0:
   print("You now have 0 health and you lost the game...")
 
