@@ -50,8 +50,8 @@ if ans == "house":
   print("\nYou go to the house and are greeted by the owner. He gives you food while you are there. You gain 5 health")
   health += 5 
 else:
-  print("\nTurns out the river has sharks. You lost 5 health")
-  health -= 5
+  print("\nTurns out the river has sharks. You lost 10 health")
+  health -= 10
 
 ans = input("\nThere is a forest on your right and on your left there is a cave. Which one do you enter. (forest/cave)")
 
@@ -67,7 +67,7 @@ if ans == "forest":
     ans = input("\n The left pathway leads deeper into the cave. It may contain treasure. Then the right pathway seems to lead to the exit. Which one will you choose? (Left/Right)")
     if ans == "Left":
       print("It leads to a dead end. On your way back you are swarmed with bats! You lost 5 health")
-     health += 5
+      health += 5
       if health <= 0:
         print("\nYou now have 0 health and you lost the game...")
 
